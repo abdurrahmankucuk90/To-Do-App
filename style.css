@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+body{
+  background-color: rgba(169, 167, 167, 0.521);
+}
+.container {
+  width: 30rem;
+  /* height: 30rem; */
+  background-color: rgb(124, 228, 232);
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5rem;
+  padding: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+@media (max-width:500px){
+  .container{
+    background-color: red;
+    margin: 0;
+    margin-top: 20%;
+    padding: 0;
+  }
+}
+
+
+/** first part*/
+
+#checkBox {
+  width: 1rem;
+}
+#titleWhat{
+  background-color: rgb(218, 94, 170);
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}
+.firstPart {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  row-gap: 1rem;
+  column-gap: 0.3rem;
+  
+}
+.firstPart label {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.firstPart #toDoText {
+  width: 100%;
+  height: 2rem;
+  padding: 1rem;
+  border-radius: 7px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.submitButton{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 1.5rem
+  border-radius: 5px;
+}
+
+/** second part*/
+.secondPart{
+  width: 100%;
+  padding: 1rem;  
+}
+.secondPart ul{
+  width: 100%;
+  gap: 1rem;
+}
+.listElement {
+  list-style: none;
+  width: 100%;
+  margin: 1rem 0rem;
+  background-color: rgb(218, 94, 170);
+  padding: .5rem;
+  padding-top: 1rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: baseline;
+  vertical-align: baseline;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.listElement1 {
+  list-style: none;
+  display: none;
+  width: 100%;
+  margin: 1rem 0rem;
+  background-color: rgb(218, 94, 170);
+  padding: .5rem;
+  border-radius: 4px;
+}
+#toDate{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+.fa-trash-can{
+  justify-self: flex-end;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+.toDoSentence {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  width: 100%;
+  color: white;
+  /* background-color: red; */
+}
+.div{
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  width: 100%;
+}
+.custom-checkbox{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    vertical-align: baseline;
+}
+.custom-checkbox .checkmark{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #222;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    background: rgb(76, 219, 238) url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png) center/1250% no-repeat ;
+    transition: .5s cubic-bezier(0.7, 0, 0.18, 1.24);
+}
+.custom-checkbox #checkBox:checked + .checkmark{
+background-size: 70%;
+transition: .5s cubic-bezier(0.7, 0, 0.18, 1.24);
+}
+.custom-checkbox #checkBox{
+    display: none;
+}

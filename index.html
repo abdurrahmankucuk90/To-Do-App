@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>To Do App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="firstPart">
+        <label for="toDoText" id="titleWhat">What task awaits you?</label>
+        <input type="text" , id="toDoText" , name="taskText" />
+        <input type="date" value="2022-06-06" id="toDate" name="dateToDo" />
+        <button class="submitButton">Send Inn</button>
+      </div>
+      <div class="secondPart">
+        <ul class="listUl">
+          <li class="listElement1">
+            <div class="toDoSentence">
+              <div class="div">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="duty" class="boldYap" id="checkBox"/>
+                  <span class="checkmark"></span>
+                </label>
+                <p id="checkBoxValue">${arrDate.join("")}</p>
+                <p id="taskToDo" class="taskToDo">${toDoYazi.value}</p>
+              </div>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>        
+            
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+
+    <script src="ToDo.js"></script>
+  </body>
+</html>
